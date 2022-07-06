@@ -17,8 +17,7 @@ pipeline {
 
               // Get the address
               def addr = vraWaitForAddress(
-                deploymentId: dep[0].id,
-                resourceName: 'UbuntuMachine')
+                deploymentId: dep[0].id)
                 echo "Deployed: $dep[0].id, addresses: ${addr[0]}"
               }
             }
